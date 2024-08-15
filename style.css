@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&family=Indie+Flower&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Protest+Riot&display=swap');
+
+*{
+    padding: 0;
+    margin: 0; 
+}
+ /*body*/ 
+body{
+    background-image: url("img/wallpaper.jpg");
+    color: rgb(208, 184, 168);
+    box-sizing: border-box;  
+    position: relative; 
+    min-height: 100vh;
+}
+.encriptador_boxes {
+    margin: 10%; 
+}
+.container__divs{
+    margin-top: 1.25rem;  
+    display: flex;
+    flex-direction: column; 
+}
+.container_textareas{
+    font-family: "Indie Flower", cursive;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    box-sizing: border-box; 
+    margin: 1.25rem;  
+}
+.container_textareas img{
+    margin: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgb(125, 110, 131), 0 6px 20px 0 rgb(125, 110, 131);
+    opacity: 0.80;
+}
+/*imagen de no texto encontrado responsive*/
+@media (min-width: 1040px) and (max-width: 2000px) {
+    .imagen_aca { 
+        width: 335px;
+        height: 800px;
+    }
+  }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .imagen_aca {
+        width: 328px;
+        height: 400px;
+    }
+  }
+@media  (min-width: 50px) and (max-width: 768px) {
+    .imagen_aca {
+        width: 328px;
+        height: 350px;
+    }
+  }
+@media (max-width: 800px) {
+    .container_textareas {
+      flex-direction: column;
+    }
+  }
+.container_text{
+   background-color: rgb(208, 184, 168);
+   border-color:  rgb(208, 184, 168);
+   opacity: 0.70;
+   border-left: 0.375rem solid rgb(125, 110, 131);
+   border-radius: 0.5rem;
+   color: rgb(125, 110, 131);
+   font-family: "Protest Riot", sans-serif;  
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 800px) {
+    .container_text {
+     margin-top: 0.4375rem; 
+    }
+  }
+/*botones diseño*/  
+.container__botones{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 10%;
+
+}
+.container__botones_btn{
+    border: 0.125rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.1875rem;
+    background-color: rgb(125, 110, 131); 
+    color: rgb(248, 237, 227);
+    font-family: "Protest Riot", sans-serif;  
+    margin: 7%;    
+}
+.container__botones_btn:hover{
+   background-color: rgb(208, 184, 168); 
+}
+#texto_de_error{
+    color:rgb(125, 110, 131);
+    font-family: "Inconsolata", monospace;
+    font-weight: bold;
+   
+}
+/*Footer*/
+.footer{
+   background-color: rgb(125, 110, 131); 
+   padding: 1.5rem;
+   font-family:"Indie Flower", cursive;
+   color: rgb(248, 237, 227);
+   text-align: center;
+   opacity: 0.90;
+}
+/*Footer responsive*/
+@media (min-width: 1025px) and (max-width: 1300px) {
+    .footer { 
+        bottom: 0;
+        width: 100%;
+    }
+  }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+  }
+@media  (min-width: 200px) and (max-width: 480px) {
+    .footer {     
+        bottom: 0;
+        width: 100%;
+    }
+  }
+ /*header*/ 
+.header{
+    width: 100%; 
+} 
+.logo_en_header{
+    display: flex;
+   justify-content: flex-start;
+   flex-direction: row;
+   font-family: "Libre Baskerville", serif;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+.img_shaping{
+    margin-top: 2.875rem;
+    height: 10%;
+    margin-bottom: 10px;
+}
+.header_text{
+    height: 10%;
+    margin-top: 2.875rem;
+}
+#texto_de_error{
+    margin-top:0.4375rem;
+    margin-bottom: 0.4375rem;
+}

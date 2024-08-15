@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo_en_header">
+            <img  class="dato_header img_shaping" src="..\img\Logo.png" alt="Logo de Alura">
+            <h1 class="dato_header  header_text" id="dato0"></h1>
+        </div>    
+    </header>
+    <main class="encriptador_boxes">
+            <div class="container__divs">
+                <div class="container__texto">
+                    <h2 id="dato1"></h2>
+                    <p id="texto_de_error"></p>
+                </div>
+                <div class="container_textareas">
+                    <textarea class="container_text" id="input_texto"  name="textarea" rows="20" cols="50" >  Ingrese el texto</textarea>
+                    <img class="imagen_aca" id="imagen_aca" src="..\img\largesizeimg.PNG" alt="no hay texto traducido">
+                    <textarea  class="container_text" id="output_texto" name="textarea" rows="20" cols="50" disabled>Texto cifrado</textarea>
+                    
+                   
+                </div>
+                <div class="container__botones">
+                    <button  class="container__botones_btn" id="agregarE" onclick="divisionDeTexto(this)">Encriptar texto</button>
+                    <button  class="container__botones_btn" id="removerE" onclick="divisionDeTexto(this)" >Remover Encriptacion</button>   
+                    <button  class="container__botones_btn" onclick="copiar_texto_fun()" >Copiar cifrado</button>
+                    <button  class="container__botones_btn" onclick="limpiar_texto_fun()">Limpiar todo el texto</button>
+
+                </div>
+            </div>
+    </main>
+    <script src="encriptador.js" defer></script>
+    <footer> <p class="footer">Desarrollado por Zujeily Gonzalez </p></footer>
+</body>
+
+</html>
